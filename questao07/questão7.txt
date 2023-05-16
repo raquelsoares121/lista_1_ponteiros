@@ -1,0 +1,7 @@
+Considerando a declaração int mat[4], *p, x;, quais das seguintes expressões são válidas?
+Justifique.
+
+p = mat + 1; // V
+p = mat++; // F
+p = ++mat; // F 
+x = (*mat)++; // V

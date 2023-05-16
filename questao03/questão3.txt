@@ -1,0 +1,12 @@
+// Questão 3
+// Se i e j são variáveis inteiras e p e q ponteiros para int, quais das seguintes expressões de
+atribuição são ilegais?
+
+p = i; // F - p não recebe o valor, P recebe o endereço de i
+q = &j; // V - q recebe o endereço de j
+p = &*&i; // V - p recebe o endereço do conteúdo do endereço de i
+i = (*&)j; // F - (primeiro parêntese) - o endereço do conteúdo 
+i = *&j; // V - recebe o endereço do conteúdo de j
+i = *&*&j; // V - o conteúdo do endereço do conteúdo do endereço de j
+q = *p; // o conteúdo de p
+i = (*p)++ + *q; // V - o conteúdo de p mais o conteúdo de q
