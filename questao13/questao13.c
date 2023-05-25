@@ -24,6 +24,8 @@ int main()
         printf ("%f\n", vet[i]);
     }
 
+    free(vet);
+    vet = NULL;
     return 0;
 }
 
